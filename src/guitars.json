@@ -1,0 +1,29 @@
+[
+        {
+          brand: "Yamaha",
+          type: "Electric",
+          body: "wood",
+          reverb: "https://reverb.com/p/prs-se-silver-sky",
+          images: [
+            { filename: "img/prselectric1" },
+            { filename: "img/prselectric2" },
+            { filename: "img/prselectric3" },
+          ],
+        },
+         {
+          brand: "Gibson",
+          type: "Electric",
+          body: "wood",
+          reverb: "https://reverb.com/p/prs-se-silver-sky",
+          images: [
+            { filename: "img/prselectric1" },
+            { filename: "img/prselectric2" },
+          ],
+        },{
+          brand: "Gibson",
+          type: "Electric",
+          body: "wood",
+          reverb: "https://reverb.com/p/prs-se-silver-sky",
+          images: [],
+        },
+      ]

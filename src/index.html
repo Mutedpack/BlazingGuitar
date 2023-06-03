@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/common.css" />
+    <script src="js/common.js"></script>
+
+    <!-- Choose the FontAwesome library you want to use from the list below. Comment-out the others -->
+
+    <script defer src="fontawesome/js/brands.js"></script>
+    <script defer src="fontawesome/js/duotone.js"></script>
+    <script defer src="fontawesome/js/light.js"></script>
+    <script defer src="fontawesome/js/regular.js"></script>
+    <script defer src="fontawesome/js/sharp-regular.js"></script>
+    <script defer src="fontawesome/js/sharp-solid.js"></script>
+    <script defer src="fontawesome/js/solid.js"></script>
+    <script defer src="fontawesome/js/thin.js"></script>
+
+    <!-- Keep the FontAwesome file below. -->
+
+    <script defer src="fontawesome/js/fontawesome.js"></script>
+
+    <title>Blazing Guitar</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      @font-face {
+        font-family: "HelveticaBlack";
+        src: url("fonts/HelveticaNeueLTStd-Blk.otf") format("opentype");
+      }
+
+      @font-face {
+        font-family: "RobotoFlex";
+        src: url("fonts/RobotoFlex.ttf") format("truetype");
+      }
+
+      /* .landingPage {
+        width: var(--fullWidth);
+        height: var(--fullHeight);
+        background-color: #c0c0c0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+        font-family: RobotoFlex;
+        font-size: 50px;
+        color: #808080;
+      } */
+    </style>
+    <style>
+      :root {
+        --themeColor: #d3a06c;
+        --colorFont: #dfe0e5;
+        --colorFontHover: #b9bbc2;
+      }
+      @font-face {
+        font-family: "HelveticaBlack";
+        src: url("fonts/HelveticaNeueLTStd-Blk.otf") format("opentype");
+      }
+
+      @font-face {
+        font-family: "RobotoFlex";
+        src: url("fonts/RobotoFlex.ttf") format("truetype");
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .landingPage {
+        width: var(--fullWidth);
+        height: var(--fullHeight);
+        background-color: #c0c0c0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 1fr;
+        align-items: center;
+        justify-items: center;
+        font-family: RobotoFlex;
+        font-size: 50px;
+        color: #808080;
+      }
+
+      .smallbox {
+        background-color: #656565;
+        width: 100%;
+        height: 100%;
+        grid-column: 3;
+      }
+
+      .navbar {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        background-color: black;
+        color: var(--colorFont);
+      }
+      .menuBar {
+        display: flex;
+        flex-wrap: wrap;
+        grid-column: 3;
+        justify-self: end;
+        margin-right: 20px;
+        gap: 10px;
+        font-size: 20px;
+      }
+
+      .menuBarItem {
+        color: var(--colorFont);
+      }
+
+      .menuBarItem:hover {
+        color: var(--colorFontHover);
+      }
+      .main {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 30% 70%;
+        align-content: center;
+        justify-content: center;
+        background-image: url("img/guitar_blackbackground.png");
+        background-position: center center;
+        background-size: cover;
+        color: var(--colorFont);
+        background-color: #f0f0f0;
+      }
+
+      /* viewBox="0 0 5050.44418 2130.967667"  */
+
+      .logo {
+        background-image: url("img/redGuitarPic.png");
+        background-image: url("svg/guitarPick_white.svg");
+        background-size: contain;
+        background-position: center center;
+        height: 60px;
+        width: 60px;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="landingPage">
+      <div class="navbar">
+        <div style="margin-left: 10px">
+          <!-- <i style="color: var(--themeColor)" class="fa-duotone">&#xf8bf;</i> -->
+          <div class="logo"></div>
+        </div>
+        <div style="justify-self: center; font-size: 20px">Blazing Guitars</div>
+        <div class="menuBar">
+          <div class="menuBarItem">Guitars</div>
+          <div class="menuBarItem">about</div>
+          <div class="menuBarItem">lessons</div>
+        </div>
+      </div>
+      <div class="main">
+        <div
+          style="
+            align-self: start;
+            justify-self: center;
+            grid-row: 2;
+            grid-column: 1;
+          "
+        >
+          <div>
+            <div>Mike Mendoza</div>
+            <div>(509) 526-0633</div>
+          </div>
+          <div>mike.mendoza@live.com</div>
+        </div>
+        <div
+          style="
+            align-self: center;
+            justify-self: center;
+            grid-row: 2;
+            grid-column: 2;
+            align-self: start;
+          "
+        >
+          <div>Mon-Fri 11:00-5:30</div>
+          <div>Sat 11:00-3:00</div>
+        </div>
+        <div
+          style="
+            align-self: start;
+            justify-self: center;
+            grid-row: 2;
+            grid-column: 3;
+          "
+        >
+          3
+        </div>
+      </div>
+    </div>
+    <script>
+      guitar1 = {
+        brand: "Yamaha",
+        type: "Electric",
+        body: "wood",
+        reverb: "https://reverb.com/p/prs-se-silver-sky",
+        images: [
+          { filename: "img/prselectric1" },
+          { filename: "img/prselectric2" },
+          { filename: "img/prselectric3" },
+        ],
+      };
+
+      guitar2 = {
+        brand: "Gibson",
+        type: "Electric",
+        body: "wood",
+        reverb: "https://reverb.com/p/prs-se-silver-sky",
+        images: [
+          { filename: "img/prselectric1" },
+          { filename: "img/prselectric2" },
+        ],
+      };
+
+      guitar3 = {
+        brand: "Gibson",
+        type: "Electric",
+        body: "wood",
+        reverb: "https://reverb.com/p/prs-se-silver-sky",
+        images: [],
+      };
+
+      guitars1 = [guitar1, guitar2, guitar3];
+
+      guitars2 = [
+        {
+          brand: "Yamaha",
+          type: "Electric",
+          body: "wood",
+          reverb: "https://reverb.com/p/prs-se-silver-sky",
+          images: [
+            { filename: "img/prselectric1" },
+            { filename: "img/prselectric2" },
+            { filename: "img/prselectric3" },
+          ],
+        },
+        {
+          brand: "Gibson",
+          type: "Electric",
+          body: "wood",
+          reverb: "https://reverb.com/p/prs-se-silver-sky",
+          images: [
+            { filename: "img/prselectric1" },
+            { filename: "img/prselectric2" },
+          ],
+        },
+        {
+          brand: "Gibson",
+          type: "Electric",
+          body: "wood",
+          reverb: "https://reverb.com/p/prs-se-silver-sky",
+          images: [],
+        },
+      ];
+
+      console.log(JSON.stringify(guitars2));
+
+      window.onload = function () {
+        readFolderFile();
+      };
+
+      function readFolderFile() {
+        fetch("images.txt")
+          .then((response) => response.text())
+          .then((data) => console.log(data))
+          .catch((error) => console.error(error));
+      }
+
+      function readFile() {
+        let data;
+
+        fetch("./files/beers.json")
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (json) {
+            console.log(json.beers);
+            for (beer = 0; beer < json.beers.length; beer = beer + 1) {
+              console.log(json.beers[beer].name);
+            }
+          });
+
+        return data;
+      }
+    </script>
+  </body>
+</html>
